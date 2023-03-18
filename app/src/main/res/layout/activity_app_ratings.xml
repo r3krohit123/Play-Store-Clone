@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFF2F2F2">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:background="#FFFFFFFF" />
+
+    <ImageView
+        android:id="@+id/profile_image"
+        android:layout_width="94dp"
+        android:layout_height="94dp"
+        android:layout_centerHorizontal="true"
+      />
+
+    <TextView
+        android:id="@+id/tv_rate_this_app"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profile_image"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Rate this app"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <RatingBar
+        android:id="@+id/rb_app"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_rate_this_app"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:secondaryProgressTint="#FF0F9D58"
+        android:stepSize="1" />
+
+    <Button
+        android:id="@+id/btn_submit"
+        style="?borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rb_app"
+        android:layout_alignParentEnd="true"
+        android:text="SUBMIT"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:textColor="#FF616161" />
+
+</RelativeLayout>
